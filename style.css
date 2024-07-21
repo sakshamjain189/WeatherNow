@@ -1,0 +1,60 @@
+.gradient-background {
+    background: linear-gradient(300deg, rgb(104, 1, 1), darkorange, gold, darkgreen, darkblue, indigo, darkviolet);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .text-uppercase{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  p{
+    color: yellow;
+  }
+
+  .card{
+    background-color: transparent !important;
+    border: 2px solid aliceblue;
+    border-radius: 15px;
+  }
+
+  .media-body{
+    color:aliceblue
+  }
+
+  .d-flex{
+    background-color: transparent !important;
+  }
+
+  .col{
+    border: 2px solid lightgreen;
+    border-radius: 15px;
+    padding: 5px;
+  }
+  
+  .text-body-emphasis{
+    color: lightgreen !important;
+  }
+
+  .fc{
+    color: lightgoldenrodyellow;
+    font-weight: bold !important;
+  }
+
+  #sub{
+    color:black !important;
+  }
