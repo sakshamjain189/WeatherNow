@@ -29,18 +29,8 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="form-check form-switch mx-4">
-          <input
-            class="form-check-input p-2"
-            type="checkbox"
-            role="switch"
-            id="flexSwitchCheckChecked"
-            checked
-            onclick="myFunction()"
-          />
-        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">           
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -50,6 +40,21 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">About</a>
             </li>
+            <li class="nav-item"></li>
+            <a class="nav-link active" aria-current="page" href="#">Dark Mode
+              
+              <div class="form-check form-switch mx-4">
+                <input
+                  class="form-check-input p-2"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckChecked"
+                  checked
+                  onclick="myFunction()"
+                />
+              </div>
+            </a>
+          </li>
           </ul>
         </div>
       </div>
@@ -447,7 +452,7 @@
       <div class="col-md-5 offset-md-1 mb-3">
         <form>
           <h5>Subscribe to WeatherNow.</h5>
-          <p id="sub" style="color:darkgrey !important">Check out our plans starting from $0 to get quickest real-time weather updates, full-time access, hourly updated forecasts and more.</p>
+          <p id="sub" style="color:darkgrey !important">Check out our plans starting from $0 to get quickest real-time weather updates, full-time aceess, unlimited use and more.</p>
           <div class="d-flex flex-column flex-sm-row w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">Email address</label>
             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
@@ -478,7 +483,7 @@
   function myFunction() {
     var element = document.body;
     element.dataset.bsTheme =
-      element.dataset.bsTheme == "light" ? "dark" : "light";
+    element.dataset.bsTheme == "light" ? "dark" : "light";
   }
   function stepFunction(event) {
     debugger;
