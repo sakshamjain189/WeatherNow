@@ -1,10 +1,28 @@
-.gradient-background {
+body[data-bs-theme="light"] {
     background: linear-gradient(300deg, rgb(104, 1, 1), darkorange, gold, darkgreen, darkblue, indigo, darkviolet);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
   }
   
   @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  body[data-bs-theme="dark"]{
+    background: linear-gradient(300deg, #999999, #808080, #666666, #4d4d4d, #333333, #1a1a1a, #000000);
+    background-size: 180%, 180%;
+    animation: dark-gradient-animation 18s ease infinite;
+  }
+
+  @keyframes dark-gradient-animation {
     0% {
       background-position: 0% 50%;
     }
@@ -41,13 +59,13 @@
   }
 
   .col{
-    border: 2px solid lightgreen;
+    border: 2px solid aliceblue;
     border-radius: 15px;
     padding: 5px;
   }
   
   .text-body-emphasis{
-    color: lightgreen !important;
+    color: white !important;
   }
 
   .fc{
