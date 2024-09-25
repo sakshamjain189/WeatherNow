@@ -44,14 +44,14 @@ const getForecast = (city) => {
     .then((response) =>{
         console.log(response)
         city_nm.innerHTML = 'Here is a quick future weather overview of ' + city + ':'
-        day1.innerHTML = response.forecasts[1].day
-        day2.innerHTML = response.forecasts[2].day
-        day3.innerHTML = response.forecasts[3].day
-        day4.innerHTML = response.forecasts[4].day
-        day5.innerHTML = response.forecasts[5].day
-        day6.innerHTML = response.forecasts[6].day
-        day7.innerHTML = response.forecasts[7].day
-        day8.innerHTML = response.forecasts[8].day
+        day1.innerHTML = 'Day: ' + response.forecasts[1].day
+        day2.innerHTML = 'Day: ' + response.forecasts[2].day
+        day3.innerHTML = 'Day: ' + response.forecasts[3].day
+        day4.innerHTML = 'Day: ' + response.forecasts[4].day
+        day5.innerHTML = 'Day: ' + response.forecasts[5].day
+        day6.innerHTML = 'Day: ' + response.forecasts[6].day
+        day7.innerHTML = 'Day: ' + response.forecasts[7].day
+        day8.innerHTML = 'Day: ' + response.forecasts[8].day
         min1.innerHTML = F2C(response.forecasts[1].low) + '&deg;C'
         min2.innerHTML = F2C(response.forecasts[2].low) + '&deg;C'
         min3.innerHTML = F2C(response.forecasts[3].low) + '&deg;C'
